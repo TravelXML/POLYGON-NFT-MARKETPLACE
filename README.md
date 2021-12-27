@@ -1,4 +1,4 @@
-## Full stack NFT marketplace built with Polygon, Solidity, IPFS, & Next.js
+# NFT Marketplace Built With Polygon, Solidity, IPFS, & Next.js
 
 ![Header]()
 
