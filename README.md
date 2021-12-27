@@ -110,13 +110,13 @@ If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) pro
 #### Deploy into Mumbai test network
 Here, we will add the following configurations for the Mumbai test network as listed here:
 
-**Network Name: Mumbai TestNet
+* Network Name: Mumbai TestNet
 
-**New RPC URL: https://rpc-mumbai.matic.today
+* New RPC URL: https://rpc-mumbai.matic.today
 
-**Chain ID: 80001
+* Chain ID: 80001
 
-**Currency Symbol: Matic
+* Currency Symbol: Matic
 
 Save this, then you should be able to switch to and use the new network!
 
