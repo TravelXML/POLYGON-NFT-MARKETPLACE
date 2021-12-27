@@ -10,7 +10,7 @@ Create NFT Marketplace With Below Options.
 * Home
 * Sell Digital Asset
 * My Digital Assets
-* Creator Dashboad
+* Creator Dashboard
 
 
 ### Run this project
@@ -118,16 +118,21 @@ Here, we will add the following configurations for the Mumbai test network as li
 
 * Currency Symbol: Matic
 
+![image](https://user-images.githubusercontent.com/8361967/147471123-8d7771e3-5ab0-41ac-b58b-e9ed4b2717d0.png)
+
 Save this, then you should be able to switch to and use the new network!
 
-Finally, you will need some testnet Matic tokens in order to interact with the applications.
+Finally, you will need some testnet Matic tokens in order to interact with the applications[.secret->privatekey].
 
-To get these, you can visit the Matic Faucet, inputting the address of the wallets that you would like to request the tokens.
+To get these, you can visit the Matic Faucet, inputting the address of the wallets that you would like to request the tokens for.
 Deploying to the Matic / Polygon network
 
 Now that you have some Matic tokens, you can deploy to the Polygon network!
 
+![image](https://user-images.githubusercontent.com/8361967/147471322-131c334e-ec5a-4f27-b91d-7269b1c2e72a.png)
+
 To do so, be sure that the address associated with the private key you are deploying your contract with has received some Matic tokens in order to pay the gas fees for the transaction.
+
 
 To deploy to Matic, run the following command:
 
@@ -135,9 +140,36 @@ To deploy to Matic, run the following command:
 
 Once the contracts have been deployed, you should be able to update the contract addresses in your project and test on the new network 🎉!
 
-    npm run dev
+**File Name: config.js
 
-Deploying to Mainnet
+![image](https://user-images.githubusercontent.com/8361967/147471594-7829a65a-10f4-43a5-8557-8a6db99e7f65.png)
+
+**change to smart contract deployed address:
+
+![image](https://user-images.githubusercontent.com/8361967/147471686-9372dc27-0b0f-4840-a66a-8bcde9e1dbae.png)
+
+
+**Change the JSON Provider in index.js file loadNFTs()
+
+  const provider = new ethers.providers.JsonRpcProvider()
+
+**change to
+
+![image](https://user-images.githubusercontent.com/8361967/147471400-cac80ac5-f38c-4790-af9c-55760ad0baa9.png)
+
+Then good to up the server, Run below command
+
+    npm run dev
+    
+After Deploying to Mumbai Test Network, you scan your address and see what all transactions occurred.
+![image](https://user-images.githubusercontent.com/8361967/147469842-c916a347-89cf-40ff-a4eb-586420105801.png)
+
+Finally Here is the NFT Marketplace!
+
+![image](https://user-images.githubusercontent.com/8361967/147471812-2d68ea6a-0485-4d7d-b34e-0fa7157dc240.png)
+
+
+## Deploying to Mainnet
 
 To deploy to the main Matic / Polygon network, you can use the same steps we set up for the Mumbai test network.
 
@@ -163,9 +195,12 @@ For example, using something like Infura:
 
   url: `https://polygon-mainnet.infura.io/v3/${infuraId}`
 
+Congratulations! You've deployed a NFT Marketplace to Polygon.
 
-After Deploying to Mumbai Test Network, you scan your address and see what all transactions occurred.
-![image](https://user-images.githubusercontent.com/8361967/147469842-c916a347-89cf-40ff-a4eb-586420105801.png)
+
+
+Show some :love
+
 
 
 
