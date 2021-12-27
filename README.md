@@ -1,13 +1,19 @@
-# NFT Marketplace Built With Polygon, Solidity, IPFS, & Next.js
+# NFT Marketplace Built With Polygon, Solidity, IPFS & Next.js
 
-![Header]()
+![Header](https://raw.githubusercontent.com/TravelXML/POLYGON-NFT-MARKETPLACE/main/NFT%20Marketplace.png)
+
+## Objective
+
+Create NFT Marketplace With Below Options.
+
+> 'Home'
+> 'Sell Digital Asset'
+> 'My Digital Assets'
+> 'Creator Dashboad'
 
 
-### Running this project
-
-
-
-#### Local Setup
+### Run this project
+#### How to setup locally?
 
 To run this project locally, follow these steps.
 
@@ -45,7 +51,7 @@ npm run dev
 ```
 ![image](https://user-images.githubusercontent.com/8361967/147458787-c5e3f23c-58ce-4a63-910d-f6ca114ce587.png)
 
-Navigate [http://localhost:3000](http://localhost:3000) on browser you could see your marketplace is up.
+Navigate [http://localhost:3000](http://localhost:3000) on the browser you can see your marketplace is up.
 
 Click on Sell Digital Asset
 
@@ -100,3 +106,6 @@ module.exports = {
 ```
 
 If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+
+
+
