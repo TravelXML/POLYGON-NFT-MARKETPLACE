@@ -110,10 +110,13 @@ If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) pro
 #### Deploy into Mumbai test network
 Here, we will add the following configurations for the Mumbai test network as listed here:
 
-Network Name: Mumbai TestNet
-New RPC URL: https://rpc-mumbai.matic.today
-Chain ID: 80001
-Currency Symbol: Matic
+**Network Name: Mumbai TestNet
+
+**New RPC URL: https://rpc-mumbai.matic.today
+
+**Chain ID: 80001
+
+**Currency Symbol: Matic
 
 Save this, then you should be able to switch to and use the new network!
 
@@ -128,11 +131,11 @@ To do so, be sure that the address associated with the private key you are deplo
 
 To deploy to Matic, run the following command:
 
-npx hardhat run scripts/deploy.js --network mumbai
+    npx hardhat run scripts/deploy.js --network mumbai
 
 Once the contracts have been deployed, you should be able to update the contract addresses in your project and test on the new network 🎉!
 
-npm run dev
+    npm run dev
 
 Deploying to Mainnet
 
@@ -158,7 +161,7 @@ Public RPCs like the one listed above may have traffic or rate-limits depending 
 
 For example, using something like Infura:
 
-url: `https://polygon-mainnet.infura.io/v3/${infuraId}`
+  url: `https://polygon-mainnet.infura.io/v3/${infuraId}`
 
 
 After Deploying to Mumbai Test Network, you scan your address and see what all transactions occurred.
