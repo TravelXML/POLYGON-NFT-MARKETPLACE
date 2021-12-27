@@ -6,10 +6,10 @@
 
 Create NFT Marketplace With Below Options.
 
-> 'Home'
-> 'Sell Digital Asset'
-> 'My Digital Assets'
-> 'Creator Dashboad'
+> Home
+> Sell Digital Asset
+> My Digital Assets
+> Creator Dashboad
 
 
 ### Run this project
