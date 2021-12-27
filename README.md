@@ -124,8 +124,10 @@ Save this, then you should be able to switch to and use the new network!
 
 Finally, you will need some testnet Matic tokens in order to interact with the applications[.secret->privatekey].
 
-To get these, you can visit the Matic Faucet, inputting the address of the wallets that you would like to request the tokens for.
-Deploying to the Matic / Polygon network
+To get these, you can visit the [Matic Faucet](https://faucet.polygon.technology/), inputting the address of the wallets that you would like to request the tokens for.
+Deploying to the Matic / Polygon network.
+![image](https://user-images.githubusercontent.com/8361967/147472081-64c009bd-c27c-4f22-8306-c236fd0b5a85.png)
+
 
 Now that you have some Matic tokens, you can deploy to the Polygon network!
 
@@ -199,7 +201,7 @@ Congratulations! You've deployed a NFT Marketplace to Polygon.
 
 
 
-Show some :love
+Show Some 💓
 
 
 
