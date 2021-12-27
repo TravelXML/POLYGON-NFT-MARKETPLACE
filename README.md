@@ -11,7 +11,7 @@
 
 To run this project locally, follow these steps.
 
-1. Clone the project locally, change into the directory, and install the dependencies:
+#### 1. Clone the project locally, change into the directory, and install the dependencies:
 
 ```sh
 git clone https://github.com/TravelXML/POLYGON-NFT-MARKETPLACE.git
@@ -26,19 +26,19 @@ npm install
 yarn
 ```
 
-2. Start the local Hardhat node
+#### 2. Start the local Hardhat node
 
 ```sh
 npx hardhat node
 ```
 
-3. With the network running, deploy the contracts to the local network in a separate terminal window
+#### 3. With the network running, deploy the contracts to the local network in a separate terminal window
 
 ```sh
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-4. Start the app
+#### 4. Start the app
 
 ```
 npm run dev
@@ -46,6 +46,13 @@ npm run dev
 ![image](https://user-images.githubusercontent.com/8361967/147458787-c5e3f23c-58ce-4a63-910d-f6ca114ce587.png)
 
 Navigate [http://localhost:3000](http://localhost:3000) on browser you could see your marketplace is up.
+
+Click on Sell Digital Asset
+
+![image](https://user-images.githubusercontent.com/8361967/147459946-cc4742ee-2776-4083-a42f-c3975099325a.png)
+
+Click on Home
+
 ![image](https://user-images.githubusercontent.com/8361967/147459625-fdcbcdb5-2e12-4806-b37b-c07f09128768.png)
 
 
