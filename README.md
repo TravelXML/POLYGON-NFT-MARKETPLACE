@@ -142,20 +142,20 @@ To deploy to Matic, run the following command:
 
 Once the contracts have been deployed, you should be able to update the contract addresses in your project and test on the new network 🎉!
 
-**File Name: config.js
+**File Name: config.js**
 
 ![image](https://user-images.githubusercontent.com/8361967/147471594-7829a65a-10f4-43a5-8557-8a6db99e7f65.png)
 
-**change to smart contract deployed address:
+**change to smart contract deployed address:**
 
 ![image](https://user-images.githubusercontent.com/8361967/147471686-9372dc27-0b0f-4840-a66a-8bcde9e1dbae.png)
 
 
-**Change the JSON Provider in index.js file loadNFTs()
+**Change the JSON Provider in index.js file loadNFTs()**
 
-  const provider = new ethers.providers.JsonRpcProvider()
+    const provider = new ethers.providers.JsonRpcProvider()
 
-**change to
+**Change to**
 
 ![image](https://user-images.githubusercontent.com/8361967/147471400-cac80ac5-f38c-4790-af9c-55760ad0baa9.png)
 
