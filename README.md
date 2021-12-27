@@ -107,6 +107,64 @@ module.exports = {
 ```
 
 If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+#### Deploy into Mumbai test network
+Here, we will add the following configurations for the Mumbai test network as listed here:
+
+Network Name: Mumbai TestNet
+New RPC URL: https://rpc-mumbai.matic.today
+Chain ID: 80001
+Currency Symbol: Matic
+
+Save this, then you should be able to switch to and use the new network!
+
+Finally, you will need some testnet Matic tokens in order to interact with the applications.
+
+To get these, you can visit the Matic Faucet, inputting the address of the wallets that you would like to request the tokens.
+Deploying to the Matic / Polygon network
+
+Now that you have some Matic tokens, you can deploy to the Polygon network!
+
+To do so, be sure that the address associated with the private key you are deploying your contract with has received some Matic tokens in order to pay the gas fees for the transaction.
+
+To deploy to Matic, run the following command:
+
+npx hardhat run scripts/deploy.js --network mumbai
+
+Once the contracts have been deployed, you should be able to update the contract addresses in your project and test on the new network 🎉!
+
+npm run dev
+
+Deploying to Mainnet
+
+To deploy to the main Matic / Polygon network, you can use the same steps we set up for the Mumbai test network.
+
+The main difference is that you'll need to use an endpoint for Matic as well as import the network into your MetaMask wallet as listed here.
+
+An example update in your project to make this happen might look like this:
+```javascript
+
+/* hardhat.config.js */
+
+/* adding Matic main network config to existing config */
+...
+matic: {
+  url: "https://rpc-mainnet.maticvigil.com",
+  accounts: [privateKey]
+}
+…
+```
+
+Public RPCs like the one listed above may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL using services like Infura, MaticVigil, QuickNode, Chainstack, or Ankr.
+
+For example, using something like Infura:
+
+url: `https://polygon-mainnet.infura.io/v3/${infuraId}`
+
+
+After Deploying to Mumbai Test Network, you scan your address and see what all transactions occurred.
+![image](https://user-images.githubusercontent.com/8361967/147469842-c916a347-89cf-40ff-a4eb-586420105801.png)
+
+
 
 
 
