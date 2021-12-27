@@ -1,37 +1,110 @@
-## Welcome to GitHub Pages
+# NFT Marketplace Built With Polygon, Solidity, IPFS & Next.js
 
-You can use the [editor on GitHub](https://github.com/TravelXML/POLYGON-NFT-MARKETPLACE/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Header](https://raw.githubusercontent.com/TravelXML/POLYGON-NFT-MARKETPLACE/main/NFT%20Marketplace.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Objective
 
-### Markdown
+Create NFT Marketplace With Below Options.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Home
+* Sell Digital Asset
+* My Digital Assets
+* Creator Dashboad
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Run this project
+#### How to setup locally?
 
-- Bulleted
-- List
+To run this project locally, follow these steps.
 
-1. Numbered
-2. List
+#### 1. Clone the project locally, change into the directory, and install the dependencies:
 
-**Bold** and _Italic_ and `Code` text
+```sh
+git clone https://github.com/TravelXML/POLYGON-NFT-MARKETPLACE.git
 
-[Link](url) and ![Image](src)
+cd POLYGON-NFT-MARKETPLACE
+
+# install using NPM or Yarn
+npm install
+
+# or
+
+yarn
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+#### 2. Start the local Hardhat node
 
-### Jekyll Themes
+```sh
+npx hardhat node
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TravelXML/POLYGON-NFT-MARKETPLACE/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### 3. With the network running, deploy the contracts to the local network in a separate terminal window
 
-### Support or Contact
+```sh
+npx hardhat run scripts/deploy.js --network localhost
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### 4. Start the app
+
+```
+npm run dev
+```
+![image](https://user-images.githubusercontent.com/8361967/147458787-c5e3f23c-58ce-4a63-910d-f6ca114ce587.png)
+
+Navigate [http://localhost:3000](http://localhost:3000) on the browser you can see your marketplace is up.
+
+Click on Sell Digital Asset
+
+![image](https://user-images.githubusercontent.com/8361967/147459946-cc4742ee-2776-4083-a42f-c3975099325a.png)
+
+Click on Home
+
+![image](https://user-images.githubusercontent.com/8361967/147459625-fdcbcdb5-2e12-4806-b37b-c07f09128768.png)
+
+
+### Configuration
+
+To deploy to Polygon test or main networks, update the configurations located in __hardhat.config.js__ to use a private key and, optionally, deploy to a private RPC like Infura.
+
+```javascript
+require("@nomiclabs/hardhat-waffle");
+const fs = require('fs');
+const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789";
+const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
+
+module.exports = {
+  defaultNetwork: "hardhat",
+  networks: {
+    hardhat: {
+      chainId: 1337
+    },
+    /*
+    mumbai: {
+      // Infura
+      url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
+      //url: "https://rpc-mumbai.matic.today",
+      accounts: [privateKey]
+    },
+    matic: {
+      // Infura
+      url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
+      //url: "https://rpc-mainnet.maticvigil.com",
+      accounts: [privateKey]
+    }
+    */
+  },
+  solidity: {
+    version: "0.8.4",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
+    }
+  }
+};
+```
+
+If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+
+Show some ♥️
