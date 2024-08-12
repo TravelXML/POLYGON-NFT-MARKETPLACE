@@ -7,7 +7,7 @@
 
 Create NFT Marketplace With Below Options.
 
-* Home
+* Home/ Dashboard
 * Sell Digital Asset
 * My Digital Assets
 * Creator Dashboard
